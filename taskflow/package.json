@@ -1,0 +1,2 @@
+{ "name": "taskflow", "version": "1.0.0", "description": "Full-stack task manager with authentication",
+  "scripts": { "start": "node server/server.js", "test": "node --test \"tests/*.test.js\"" }, "author": "Vinayak Vaishy", "license": "ISC" }

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TaskFlow</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main id="auth" class="card">
+  <h1>TaskFlow</h1><p class="sub">A simple task manager</p>
+  <input id="name" placeholder="Name"><input id="email" type="email" placeholder="Email"><input id="password" type="password" placeholder="Password (min 6 characters)">
+  <button id="submit">Create account</button><p id="error" class="error"></p>
+  <p><a href="#" id="toggle">Have an account? Log in</a></p>
+</main>
+<main id="app" class="card wide" hidden>
+  <header><h1>TaskFlow</h1><span id="who"></span><button id="logout" class="ghost">Log out</button></header>
+  <form id="form"><input id="title" placeholder="New task" maxlength="100"><input id="due" type="date"><button>Add</button></form>
+  <nav id="filters"><button data-s="">All</button><button data-s="todo">To do</button><button data-s="in-progress">In progress</button><button data-s="done">Done</button></nav>
+  <p id="msg" class="error"></p><ul id="list"></ul><p id="count" class="sub"></p>
+</main>
+<script src="app.js"></script></body></html>
